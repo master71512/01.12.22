@@ -5,9 +5,11 @@ i = 2
 while num > 1:
     if num % i == 0:
         flag = True
-        for j in range(2, i+1):
-            if i % j == 0 and j != i:
+        j = 2
+        while j <= i//2:
+            if i % j == 0:
                 flag = False
+            j += 1
         if flag:
             nums.append(i)
             num = num // i
