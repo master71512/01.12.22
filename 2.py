@@ -16,5 +16,5 @@ while num > 1:
             num = num // i
             i = 2
     else:
-        i += 1    
-print(nums)                
+        i += 1
+print(nums)
